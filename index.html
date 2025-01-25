@@ -1,59 +1,168 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<html lang="en">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nik-unj</title>
+    <link rel="stylesheet" href="assets/css/plugin.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+<body>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-    <base href="/" />
+    <!-- Start Preload -->
+    <div class="preloader">
+    </div>
+    <div class="block-1"></div>
+    <div class="block-2"></div>
+    <div class="logo-load">
+        <img src="assets/img/logo.svg" alt="">
+    </div>
+    <div class="logo-load spinning"></div>
+    <div class="over-all"></div>
+    <!-- End Preload -->
 
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="A new Flutter project." />
+    <!-- Start Header -->
+    <header>
 
-    <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="portfolio" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+        <nav>
+            <!-- Logo -->
+            <div class="logo hover-target">
+                <a class="load-spiral" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+            </div>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    </header>
+    <!-- End Header -->
 
-    <title>Nikunj Agrawal👋: Developer</title>
-    <link rel="manifest" href="manifest.json" />
 
-    <script>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "2172847048";
-    </script>
-    <!-- This script adds the flutter initialization JS code -->
-    <script src="flutter.js" defer></script>
-  </head>
-  <body>
-    <script>
-      window.addEventListener("load", function (ev) {
-        // Download main.dart.js
-        _flutter.loader.loadEntrypoint({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
-          onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer.initializeEngine().then(function (appRunner) {
-              appRunner.runApp();
-            });
-          },
-        });
-      });
-    </script>
-  </body>
+    <!-- Start Content -->
+    <div id="spiral">
+
+        <!-- Header -->
+        <div class="scrolls">
+            <img draggable="false" src="assets/img/sroll.svg" alt="scroll">
+        </div>
+        <div class="main-head">
+            <div id="headmove">
+                <div data-depth="0.2">
+                    <div class="bg-right"></div>
+                </div>
+            </div>
+            <div class="heading-text">
+                <div class="heading-text-front">
+                    <h1>I AM NIKUNJ , SOFTWARE ENGINEER<br>
+                        Innovating through code</h1>
+                </div>
+                <div class="heading-text-back">
+                    <h1>I AM NIKUNJ , SOFTWARE ENGINEER<br>
+                        Innovating through code</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section class="about">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-7">
+                        <div class="img-about luxy-el" data-horizontal="1" data-speed-x="1">
+                            <img class="img-fluid" src="assets/img/about.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="abt-text">
+                            <p>Specializing in cross-platform mobile development, I craft seamless, high-performance applications for Android and iOS using Flutter. With a focus on user experience and robust functionality, I deliver apps that bring ideas to life.
+                            </p>
+                            <!-- <a class="hover-target load-spiral" href="about.html">Explore more</a> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <!-- Portfolio -->
+
+        <section class="folio-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-title text-center">
+
+                            <h2>Projects from <span>My Portfolio</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="folio-item">
+
+                            <div class="img-folio cursorExplore">
+                                <a class="load-spiral" href="https://helpapp.network/" target="_blank">
+                                    <img class="img-fluid" src="assets/img/help.png" draggable="false" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="folio-item">
+
+                            <div class="img-folio cursorExplore">
+                                <a class="load-spiral" href="https://github.com/nik-unj/coffee_ui" target="_blank">
+                                    <img class="img-fluid" src="assets/img/coffee_app.png" draggable="false" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+      
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-left mt-30">
+                        <div class="mail hover-target">
+                            <a href="#">agrawalnikunj2001@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mt-30">
+                        <div class="logo-foot">
+                            <img src="assets/img/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-right mt-30">
+                        <div class="sosmed">
+                            <ul>
+                                <!-- <li class="hover-target"><a href="#">Instagram.</a></li> -->
+                                <li class="hover-target"><a href="https://www.linkedin.com/in/nikunj-agrawal-55901622a/" target="_blank">Linkedin.</a></li>
+                                <li class="hover-target"><a href="https://github.com/nik-unj" target="_blank">GitHub.</a></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <p>Made with ♥️ by Nikunj.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Cursor -->
+    <div class="cursor1" id="cursor1"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
