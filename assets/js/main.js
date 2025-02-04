@@ -127,6 +127,11 @@
         HideLoad();
     });
 
+    $('.load-spiral-blank').on('click', function (e) {
+        e.preventDefault();
+        window.open(this.href, '_blank');
+    });
+
 
     //--------------------------------------------------
     // Animation on navbar scrolling background
