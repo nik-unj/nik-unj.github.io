@@ -3,214 +3,409 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>nik-unj</title>
-    <!-- <link rel="icon" type="image/png" href="assets/img/logo_small.png"> -->
-    <link rel="stylesheet" href="assets/css/plugin.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Nikunj Agrawal - Flutter Developer</title>
+    <meta name="description"
+        content="Professional portfolio of Nikunj Agrawal, a Flutter mobile app developer specializing in building beautiful, cross-platform mobile applications.">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Nikunj Agrawal - Flutter Developer Portfolio">
+    <meta property="og:description"
+        content="Professional portfolio showcasing Flutter mobile app development projects, skills, and experience.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="highlight">N</span>A
+            </a>
 
-    <!-- Start Preload -->
-    <div class="preloader">
-    </div>
-    <div class="block-1"></div>
-    <div class="block-2"></div>
-    <div class="logo-load">
-        <img src="assets/img/logo_small.png" alt="">
-    </div>
-    <div class="logo-load spinning"></div>
-    <div class="over-all"></div>
-    <!-- End Preload -->
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
 
-    <!-- Start Header -->
-    <header>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
 
-        <nav>
-            <!-- Logo -->
-            <div class="logo hover-target">
-                <a class="load-spiral" href="index.html"><img src="assets/img/logo.png" alt="logo" height="100px"
-                        width="100px" style="margin: 0;"></a>
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-
+        </div>
     </header>
-    <!-- End Header -->
 
-
-    <!-- Start Content -->
-    <div id="spiral">
-
-        <!-- Header -->
-        <div class="scrolls">
-            <img draggable="false" src="assets/img/sroll.svg" alt="scroll">
-        </div>
-        <div class="main-head">
-            <div id="headmove">
-                <div data-depth="0.2">
-                    <div class="bg-right"></div>
-                </div>
-            </div>
-            <div class="heading-text">
-                <div class="heading-text-front">
-                    <h1>I AM NIKUNJ , SOFTWARE ENGINEER<br>
-                        Innovating through code</h1>
-                </div>
-                <div class="heading-text-back">
-                    <h1>I AM NIKUNJ , SOFTWARE ENGINEER<br>
-                        Innovating through code</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- About -->
-        <section class="about">
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
             <div class="container">
-                <div class="row centered">
-                    <div class="col-lg-7">
-                        <div class="img-about luxy-el" data-horizontal="1" data-speed-x="1">
-                            <img class="img-fluid" src="assets/img/about.jpg" alt="">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Nikunj Agrawal <span>Flutter Developer</span>
+                    </h1>
 
+                    <p class="hero-description">
+                        Building beautiful, cross-platform mobile apps with Flutter & Dart.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                        <a href="#projects" class="btn secondary-btn">View Work</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/nik-unj" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nikunj-flutter/" class="social-link"><i
+                                class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" class="social-link"><i class="fab fa-medium"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="image/self.jpg" alt="Nikunj Agrawal, Flutter Developer">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-fade">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-title-underline"></div>
+
+                <div class="about-container">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate Flutter Developer with experience in building real-world, cross-platform
+                            mobile applications that are fast, reliable, and user-focused.
+                        </p>
+                        <p>
+                            My work spans across multiple industries—developing apps that include secure payment
+                            gateways, in-app purchases, real-time WebSocket features, and push notifications. I focus on
+                            writing clean, maintainable code and using efficient state management solutions like GetX.
+                        </p>
+                        <p>I enjoy turning ideas into intuitive mobile experiences that solve real problems. Whether
+                            it's building from scratch or improving existing features, I care deeply about performance,
+                            usability, and delivering high-quality work across both Android and iOS.
+                        </p>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn primary-btn">Connect With Me</a>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="abt-text">
-                            <p>Specializing in cross-platform mobile development, I craft seamless, high-performance
-                                applications for Android and iOS using Flutter. With a focus on user experience and
-                                robust functionality, I deliver apps that bring ideas to life.
+
+                    <div class="skills-container">
+                        <h3 class="skills-title">Key Skills</h3>
+
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h4>Mobile Development</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Flutter</span>
+                                    <span class="skill-tag">Dart</span>
+                                    <span class="skill-tag">Firebase</span>
+                                    <span class="skill-tag">REST APIs</span>
+                                    <span class="skill-tag">RevenueCat</span>
+                                </div>
+                            </div>
+
+                            <!-- <div class="skill-card">
+                                <h4>State Management</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Bloc</span>
+                                    <span class="skill-tag">Provider</span>
+                                    <span class="skill-tag">Riverpod</span>
+                                    <span class="skill-tag">GetX</span>
+                                </div>
+                            </div> -->
+
+                            <div class="skill-card">
+                                <h4>UI/UX Design</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Material Design</span>
+                                    <span class="skill-tag">Cupertino</span>
+                                    <span class="skill-tag">Animations</span>
+                                    <span class="skill-tag">Responsive UI</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <h4>Tools & Platforms</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Android Studio</span>
+                                    <span class="skill-tag">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-fade">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-title-underline"></div>
+
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-fade">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-title-underline"></div>
+
+                <div class="timeline-container" id="experience-timeline">
+                    <!-- Experience timeline items will be inserted here by JavaScript -->
+                </div>
+
+                <!-- Development Environment -->
+                <div class="dev-environment">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80"
+                        alt="Modern Flutter development workspace">
+
+                    <div class="dev-environment-content">
+                        <h3>My Development Environment</h3>
+                        <p>
+                            I believe in maintaining an efficient workspace that enhances productivity. My development
+                            setup includes multiple monitors for simultaneous code and design view, powerful hardware
+                            for fast compile times, and a carefully configured software environment with VS Code,
+                            Android Studio, and various debugging tools.
+                        </p>
+                        <div class="dev-tools">
+                            <span class="dev-tool">VS Code</span>
+                            <span class="dev-tool">Android Studio</span>
+                            <span class="dev-tool">Figma</span>
+                            <span class="dev-tool">Git</span>
+                            <span class="dev-tool">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-fade">
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="section-title-underline"></div>
+
+                <div class="education-grid">
+                    <!-- Education Column -->
+                    <div class="education-column">
+                        <h3 class="column-title">
+                            <i class="fas fa-graduation-cap"></i> Academic Background
+                        </h3>
+
+                        <div class="education-items" id="education-container">
+                            <!-- Education items will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="certifications-column">
+                        <h3 class="column-title">
+                            <i class="fas fa-certificate"></i> Certifications & Training
+                        </h3>
+
+                        <div class="certification-items" id="certification-container">
+                            <!-- Certification items will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-fade">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-title-underline"></div>
+                <p class="contact-description">
+                    Let's build something amazing together! I'm currently available for freelance work or full-time
+                    opportunities.
+                </p>
+
+                <div class="contact-container">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                                    required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this about?"
+                                    required>
+                                <span class="error-message" id="subject-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your project..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn primary-btn submit-btn">
+                                <span id="submit-text">Send Message</span>
+                                <span id="submit-sending" class="hidden">Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <h3>Contact Information</h3>
+
+                        <div class="contact-info-items">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:sarah@flutterdev.com">agrawalnikunj2001@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Vadodara, Gujarat, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/nik-unj">github.com/nik-unj</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>LinkedIn</h4>
+                                    <a
+                                        href="https://www.linkedin.com/in/nikunj-flutter/">linkedin.com/in/nikunj-flutter</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="connect-message">
+                            <h3>Let's Build Something Amazing</h3>
+                            <p>
+                                I'm always open to discussing new projects, creative ideas, or opportunities to be part
+                                of your vision.
                             </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Portfolio -->
-
-        <section class="folio-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="main-title text-center">
-                            <h2>Projects from the <span>Studio</span></h2>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="folio-item">
-                            <div class="img-folio cursorExplore">
-                                <a class="load-spiral-blank" href="https://clearcommish.com/">
-                                    <img class="img-fluid" src="assets/img/clearcommish.png" draggable="false" alt="">
-                                </a>
-                            </div>
-                            <div class="icon-row">
-                                <a class="load-spiral-blank"
-                                    href="https://apps.apple.com/us/app/clear-commish/id6740223081?platform=iphone">
-                                    <img class="icon" src="assets/img/apple.svg" draggable="false" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="folio-item">
-                            <div class="img-folio cursorExplore">
-                                <a class="load-spiral-blank" href="https://github.com/nik-unj/coffee_ui">
-                                    <img class="img-fluid" src="assets/img/coffee_app.png" draggable="false" alt="">
-                                </a>
-                            </div>
-                            <div class="icon-row">
-                                <a class="load-spiral-blank"
-                                    href="https://drive.google.com/file/d/1Eq_p_viRM29r255W_tjCRIi04QD0t84O/view">
-                                    <img class="icon" src="assets/img/playstore.svg" draggable="false" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="folio-item">
-                            <div class="img-folio cursorExplore">
-                                <a class="load-spiral-blank" href="https://helpapp.network/">
-                                    <img class="img-fluid" src="assets/img/help.png" draggable="false" alt="">
-                                </a>
-                            </div>
-                            <div class="icon-row">
-                                <a class="load-spiral-blank"
-                                    href="https://play.google.com/store/apps/details?id=com.help.network">
-                                    <img class="icon" src="assets/img/playstore.svg" draggable="false" alt="">
-                                </a>
-                                <a class="load-spiral-blank"
-                                    href="https://apps.apple.com/in/app/h-e-l-p-app/id6739699656">
-                                    <img class="icon" src="assets/img/apple.svg" draggable="false" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="folio-item">
-                            <div class="img-folio cursorExplore">
-                                <a class="load-spiral-blank" href="https://studentsofcanada.ca/">
-                                    <img class="img-fluid" src="assets/img/soc.png" draggable="false" alt="">
-                                </a>
-                            </div>
-                            <div class="icon-row">
-                                <a class="load-spiral-blank"
-                                    href="https://play.google.com/store/apps/details?id=com.app.soc">
-                                    <img class="icon" src="assets/img/playstore.svg" draggable="false" alt="">
-                                </a>
-                                <a class="load-spiral-blank"
-                                    href="https://apps.apple.com/ca/app/students-of-canada/id6670703185?platform=iphone">
-                                    <img class="icon" src="assets/img/apple.svg" draggable="false" alt="">
-                                </a>
+                            <div class="social-links">
+                                <a href="https://github.com/nik-unj" class="social-icon"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/nikunj-flutter" class="social-icon"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-medium"></i></a> -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
-
-
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 text-center text-md-left mt-30">
-                        <div class="mail hover-target">
-                            <a href="#">agrawalnikunj2001@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center mt-30">
-                        <div class="logo-foot">
-                            <img src="assets/img/logo_small.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center text-md-right mt-30">
-                        <div class="sosmed">
-                            <ul>
-                                <!-- <li class="hover-target"><a href="#">Instagram.</a></li> -->
-                                <li class="hover-target"><a href="https://www.linkedin.com/in/nikunj-agrawal-55901622a/"
-                                        target="_blank">Linkedin.</a></li>
-                                <li class="hover-target"><a href="https://github.com/nik-unj"
-                                        target="_blank">GitHub.</a></li>
-                            </ul>
-                        </div>
-                        <div class="copyright">
-                            <p>Made with ♥️ by Nikunj.</p>
-                        </div>
-                    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="highlight">Nikunj</span>Agrawal</h2>
+                    <p>Flutter Developer</p>
                 </div>
+
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/nik-unj"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nikunj-flutter/"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-medium"></i></a> -->
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> Nikunj Agrawal. All rights reserved.</p>
             </div>
         </div>
+    </footer>
 
+    <!-- Toast notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title">Coming Soon!</div>
+            <div class="toast-description">This feature is coming soon! In the meantime, please reach out via email or
+                connect with me on LinkedIn.</div>
+        </div>
     </div>
-    <!-- End Content -->
 
-    <!-- Cursor -->
-    <div class="cursor1" id="cursor1"></div>
-    <div class="cursor" id="cursor"></div>
-
-    <script src="assets/js/plugin.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
